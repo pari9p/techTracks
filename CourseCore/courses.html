@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/courses.css">
+    <link rel="stylesheet" href="style/adaptive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" href="img/icon.png">
+
+    <title>Courses - CourseCore</title>
+</head>
+
+<body>
+
+    <header class="courses-header">
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+                <a href="index.html">
+                    <h1>CourseCore</h1>
+                </a>
+            </div>
+            <ul id="dropdown" class="nav-panel">
+
+                <li class="btns">
+                    <a href="register.html">Log in</a>
+                </li>
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+                <li>
+                    <a href="articles.html">Articles</a>
+                </li>
+                <li>
+                    <a href="about-us.html">About us</a>
+                </li>
+                <li>
+                    <a href="privacypolicy.html">Privacy Policy</a>
+                </li>
+                <li>
+                    <a href="#contact-us">Contact Us</a>
+                </li>
+            </ul>
+            <ul>
+                <li class="buttons">
+                    <a href="register.html"><i class="fa-solid fa-right-to-bracket"></i>Log in</a>
+                </li>
+                <li class="navigation">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </li>
+            </ul>
+
+        </nav>
+        <div class="categories-background">
+            <div class="categories-wrapper">
+                <div class="categories-container hover-dropdown" id="categories">
+                    <h3>Course categories</h3>
+
+                    <div class="categories">
+                        <a href="#design">Design</a>
+                        <a href="#economics">Economics</a>
+                        <a href="#mathematics">Mathematics</a>
+                        <a href="#programming">Programming</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-courses">
+
+        <div class="course-cards">
+
+            <div class="card" id="economics">
+                <img src="img/uiux.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>UI / UX</h2>
+                        <p>User Interface (UI) and User Experience (UX) Design play key roles in the experience users
+                            have when interacting with digital products and applications. In this course, we’ll cover
+                            the theory and methodologies behind UI and UX design. You’ll also design your own wireframes
+                            and interactive prototypes. Learning UI and UX basics can help you collaborate better on
+                            team projects and create new career opportunities.</p>
+                        <div class="card-action">
+                            <a href="course.html" class="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="mathematics">
+                <img src="img/marketing.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Marketing</h2>
+                        <p>You'll learn how to create ads using Meta Ads Manager, utilize Meta experiments, optimize ads
+                            through A/B testing, integrate data from campaigns and perform an analysis to evaluate the
+                            results. </p>
+
+                        <div class="card-action">
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card" id="programming">
+                <img src="img/algorithms.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Algorithms and Data Structures</h2>
+                        <p>An overview of data structure concepts, arrays, stack, queues, trees, and graphs. Discussion
+                            of various implementations of these data objects, programming styles, and run-time
+                            representations. Course also examines algorithms for sorting, searching and some graph
+                            algorithms. Algorithm analysis and efficient code design is discussed.</p>
+
+                        <div class="card-action">
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/java.jpg" alt="">
+                <div class="card-content">
+                    <div class="card-text">
+                        <h2>Java</h2>
+                        <p>Popular for its versatility and ability to create a wide variety of applications, learning
+                            Java opens up your possibilities when coding. With it, you’ll be able to develop large
+                            systems, software, and mobile applications — and even create mobile apps for Android. Learn
+                            important Java coding fundamentals and practice your new skills with real-world projects.
+                        </p>
+                        <div class="card-action">
+                            <a href="#" class="button">Read more</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="courses-footer">
+
+        <div class="footer-1">
+            <div class="footer-logo-cont">
+                <img src="img/logo.png" alt="logo">
+                <h1>CourseCore</h1>
+            </div>
+            <div class="payment-cont">
+                <p>Secure Payment</p>
+                <img src="img/visa-mastercard.png" alt="payment">
+            </div>
+        </div>
+        <div class="footer-2" id="contact-us">
+            <h2>Contact Us</h2>
+            <ul>
+                <a href="#"><i class="fa-solid fa-phone"></i> Tel +1 (98) 102-546-15-12</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i> coursecore.support@gmail.com</a>
+                <a href="#"><i class="fa-brands fa-twitter"></i> @coursecore</a>
+            </ul>
+        </div>
+        <div class="footer-3">
+            <h2>Useful Newsletter</h2>
+            <p>Let us notify you about new blog articles, new free courses and share useful
+                materials.</p>
+            <form class="footer-news-action">
+                <input type="text" placeholder="Your E-mail...">
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
