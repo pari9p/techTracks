@@ -51,8 +51,8 @@
 
 .article {
     width: 700px;
-    border: 1px rgb(145, 145, 241) solid;
-    border-radius: 15px;
+    border: 1px rgb(223, 92, 235) solid;
+    border-radius: 18px;
     padding: 0 100px;
     box-sizing: unset;
     transition: .6s ease;
@@ -60,7 +60,7 @@
 }
 
 .article:hover {
-    box-shadow: 2px 2px 20px 2px #dedede;
+    box-shadow: 2px 2px 2px 2px rgb(223, 92, 235);
 }
 
 .article>p {
