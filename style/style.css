@@ -274,7 +274,7 @@ nav .btns {
     width: 700px;
     height: 330px;
     border-radius: 35px 12px;
-    background-color: var(--blue);
+    background: #4630d4;
     color: var(--white);
     gap: 15px;
     transition: .6s ease;
