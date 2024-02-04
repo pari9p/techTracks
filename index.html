@@ -6,6 +6,7 @@
     <title>Tech-Treks</title>
     <link rel="stylesheet" href="style/style.css" />
     <link rel="stylesheet" href="style/adaptive.css" />
+    <link rel="stylesheet" href="style/articles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -155,49 +156,104 @@
       <div class="search">
         <div class="search-text">
           <p>
-            With our advanced search you can quickly find the course you want
+            With our advanced search, you can quickly find the course you want
           </p>
           <div class="search-form">
-            <input type="text" placeholder="Search..." /><i
-              class="fa-solid fa-magnifying-glass"
-            ></i>
-            <a href="#">Search</a>
+            <select id="courseDropdown">
+              <option value="aerospace">Aerospace Engineering</option>
+              <option value="civil">Civil Engineering</option>
+              <option value="mechanical">Mechanical Engineering</option>
+              <option value="architecture">Architecture</option>
+            </select>
+            <a href="#" onclick="searchCourse()">Search</a>
           </div>
         </div>
         <img src="img/search-img.jpg" alt="" />
       </div>
     </div>
 
-    <div class="about-us-container">
-      <div class="about-us-text">
-        <h1>Learn and Grow</h1>
-        <div class="about-us-text-block">
-          <h2>Experience</h2>
+    <div class="articles-container">
+      <div class="articles">
+        <div class="article">
+          <h2>Advancements in Mechanical Engineering</h2>
           <p>
-            Learn new knowledge and skills in a variety of ways, from engaging
-            video lectures and dynamic graphics to data visualizations and
-            interactive elements.
+            Explore the latest breakthroughs and innovations in the field of
+            Mechanical Engineering. Learn about cutting-edge technologies,
+            research, and the impact of mechanical advancements on various
+            industries.
           </p>
+          <div class="article-desc">
+            <p class="topic">Mechanical Engineering</p>
+            <a
+              href="https://example.com/mechanical-engineering-article"
+              target="_blank"
+              >Read More</a
+            >
+            <p><i class="fa-regular fa-eye"></i> 150</p>
+            <p>Reading time: 2 min.</p>
+          </div>
         </div>
-        <div class="about-us-text-block">
-          <h2>Practice</h2>
+
+        <div class="article">
+          <h2>Exploring Aerospace Innovations</h2>
           <p>
-            Demonstrating your knowledge is a critical part of learning.
-            CourseCore courses and programs provide a space to practice with
-            quizzes, open response assessments, virtual environments, and more.
+            Dive into the realm of Aerospace engineering and discover the latest
+            developments in aircraft design, space exploration, and
+            technological advancements. Stay informed about the exciting
+            progress in the field.
           </p>
+          <div class="article-desc">
+            <p class="topic">Aerospace Engineering</p>
+            <a
+              href="https://example.com/aerospace-engineering-article"
+              target="_blank"
+              >Read More</a
+            >
+            <p><i class="fa-regular fa-eye"></i> 150</p>
+            <p>Reading time: 2 min.</p>
+          </div>
         </div>
-        <div class="about-us-text-block">
-          <h2>Apply</h2>
+
+        <div class="article">
+          <h2>Innovative Approaches in Civil Engineering</h2>
           <p>
-            Learning on CourseCore transforms how you think and what you can do,
-            and translates directly into the real world—immediately apply your
-            new capabilities in the context of your job.
+            Discover the latest trends and approaches in Civil Engineering.
+            Explore groundbreaking construction techniques, sustainable
+            infrastructure projects, and the role of civil engineering in
+            shaping the future.
           </p>
+          <div class="article-desc">
+            <p class="topic">Civil Engineering</p>
+            <a
+              href="https://example.com/civil-engineering-article"
+              target="_blank"
+              >Read More</a
+            >
+            <p><i class="fa-regular fa-eye"></i> 150</p>
+            <p>Reading time: 2 min.</p>
+          </div>
+        </div>
+
+        <div class="article">
+          <h2>Architectural Marvels: Past and Present</h2>
+          <p>
+            Explore iconic architectural marvels from different eras and learn
+            about the architects who shaped the world. Dive into the history and
+            future of architecture, discussing design principles and notable
+            structures.
+          </p>
+          <div class="article-desc">
+            <p class="topic">Architecture</p>
+            <a href="https://example.com/architecture-article" target="_blank"
+              >Read More</a
+            >
+            <p><i class="fa-regular fa-eye"></i> 150</p>
+            <p>Reading time: 2 min.</p>
+          </div>
         </div>
       </div>
-      <img src="img/abt-us.jpg" alt="About us img" />
     </div>
+
     <footer>
       <div class="footer-logo">
         <img src="img/logo.png" alt="logo" />
@@ -232,5 +288,28 @@
     </footer>
 
     <script src="js/script.js"></script>
+    <script>
+      function searchCourse() {
+        var selectedCourse = document.getElementById("courseDropdown").value;
+        alert("Searching for " + selectedCourse);
+        switch (selectedCourse) {
+          case "aerospace":
+            window.location.href = "aero.html";
+            break;
+          case "civil":
+            window.location.href = "civil.html";
+            break;
+          case "mechanical":
+            window.location.href = "mech.html";
+            break;
+          case "architecture":
+            window.location.href = "archie.html";
+            break;
+          default:
+            // Handle other cases or show an error message
+            alert("Course not found");
+        }
+      }
+    </script>
   </body>
 </html>
